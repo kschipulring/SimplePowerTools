@@ -1,0 +1,27 @@
+{
+    "name": "kschipulring/SimplePowerTools",
+    "type": "library",
+    "description": "PHP PowerTools, originally created by John Slegers, but optimized for Laravel 5.4+ 'vendor' usage",
+    "homepage": "https://github.com/kschipulring/SimplePowerTools",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "John Slegers",
+            "email": "slegersjohn@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Karl Schipul",
+            "email": "contact@3ringprototype.com",
+            "role": "Developer and hacker"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0 || ^7.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "SimplePowerTools\\": "src/SimplePowerTools/"
+        }
+    }
+}
