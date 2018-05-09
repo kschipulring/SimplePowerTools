@@ -84,7 +84,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * This class offers convenience methods for parsing and serializing HTML5.

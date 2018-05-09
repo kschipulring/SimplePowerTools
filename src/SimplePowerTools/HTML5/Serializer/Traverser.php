@@ -83,7 +83,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * Traverser for walking a DOM tree.

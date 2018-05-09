@@ -1,6 +1,6 @@
 <?php
 
-$H = \PowerTools\DOM_Query::loadHTML(file_get_contents($path));
+$H = \SimplePowerTools\DOM_Query::loadHTML(file_get_contents($path));
 
 $data = array(
    'meta' => json_decode(file_get_contents('meta.json')),

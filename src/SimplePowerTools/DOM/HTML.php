@@ -65,7 +65,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 class DOM_HTML extends DOM_Document {
     

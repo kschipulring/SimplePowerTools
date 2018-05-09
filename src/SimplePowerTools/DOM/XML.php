@@ -65,7 +65,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 class DOM_XML extends DOM_Document {
     

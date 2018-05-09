@@ -87,7 +87,7 @@
  * Provide general element functions.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * This class provides general information about HTML5 elements,

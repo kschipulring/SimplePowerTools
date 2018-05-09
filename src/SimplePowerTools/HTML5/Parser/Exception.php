@@ -83,7 +83,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * Emit when the parser has an error.

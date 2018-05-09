@@ -1,7 +1,7 @@
 {
     "name": "kschipulring/SimplePowerTools",
     "type": "library",
-    "description": "PHP PowerTools, originally created by John Slegers, but optimized for Laravel 5.4+ 'vendor' usage",
+    "description": "PHP SimplePowerTools framework, derived from John Slegers PHP PowerTools",
     "homepage": "https://github.com/kschipulring/SimplePowerTools",
     "license": "MIT",
     "authors": [
@@ -19,6 +19,7 @@
     "require": {
         "php": ">=5.4.0 || ^7.0"
     },
+    "target-dir": "SimplePowerTools",
     "autoload": {
         "psr-0": {
             "SimplePowerTools\\": "src/SimplePowerTools/"

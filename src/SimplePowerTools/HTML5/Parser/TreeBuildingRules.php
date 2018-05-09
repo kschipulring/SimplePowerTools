@@ -83,7 +83,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * Handles special-case rules for the DOM tree builder.

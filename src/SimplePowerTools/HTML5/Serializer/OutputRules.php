@@ -91,7 +91,7 @@
  * was parsed. It is not intended to output exactly the document that was parsed.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 
 /**

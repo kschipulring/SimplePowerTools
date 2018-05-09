@@ -83,7 +83,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * Create an HTML5 DOM tree from events.

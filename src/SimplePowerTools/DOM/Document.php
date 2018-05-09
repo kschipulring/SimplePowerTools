@@ -65,7 +65,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 use \Symfony\Component\CssSelector\CssSelector as CssSelector;
 

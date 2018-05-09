@@ -64,7 +64,7 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 class DOM_Helper {
 
@@ -101,7 +101,7 @@ class DOM_Helper {
         if (is_callable($test)) {
             return 'Callable';
         }
-        if (is_a($test, 'PowerTools\DOM_Query')) {
+        if (is_a($test, 'SimplePowerTools\DOM_Query')) {
             return 'DOM_Query';
         }
         if (is_a($test, '\DOMElement')) {

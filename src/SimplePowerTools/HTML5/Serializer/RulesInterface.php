@@ -88,7 +88,7 @@
  * The interface definition for Rules to generate output.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * To create a new rule set for writing output the RulesInterface needs to be

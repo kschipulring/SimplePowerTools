@@ -93,7 +93,7 @@
  * a fallback for PHP versions prior to PHP 5.4 when dealing with encoding.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * A mapping of entities to their html5 representation.

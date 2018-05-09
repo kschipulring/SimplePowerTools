@@ -87,7 +87,7 @@
  * Loads a string to be parsed.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 
 /*

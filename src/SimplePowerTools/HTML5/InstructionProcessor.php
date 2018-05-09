@@ -87,7 +87,7 @@
  * A handler for processor instructions.
  */
 
-namespace PowerTools;
+namespace SimplePowerTools;
 
 /**
  * Provide an processor to handle embedded instructions.
