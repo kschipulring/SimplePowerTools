@@ -16,7 +16,7 @@
  * 
  *               DESCRIPTION :
  *
- *               Zero configuration autoloader for Symfony components, 
+ *               Zero configuration autoloader for SPTsymfony components, 
  *               Zend components, and other PSR-0 compatible libraries
  *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

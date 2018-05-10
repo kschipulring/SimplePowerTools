@@ -1,0 +1,50 @@
+<?php
+
+/*
+ * This file is part of the SPTsymfony package.
+ *
+ * (c) Fabien Potencier <fabien@symfony.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace SPTsymfony\Component\CssSelector\Parser\Shortcut;
+
+use SPTsymfony\Component\CssSelector\Node\ClassNode;
+use SPTsymfony\Component\CssSelector\Node\ElementNode;
+use SPTsymfony\Component\CssSelector\Node\SelectorNode;
+use SPTsymfony\Component\CssSelector\Parser\ParserInterface;
+
+/**
+ * CSS selector class parser shortcut.
+ *
+ * This component is a port of the Python cssselector library,
+ * which is copyright Ian Bicking, @see https://github.com/SimonSapin/cssselect.
+ *
+ * @author Jean-François Simon <jeanfrancois.simon@sensiolabs.com>
+ */
+class ClassParser implements ParserInterface
+{
+    /**
+     * {@inheritdoc}
+     */
+    public function parse($source)
+    {
+        // Matches an optional namespace, optional element, and required class
+        // $source = 'test|input.ab6bd_field';
+        // $matches = array (size=5)
+        //     0 => string 'test:input.ab6bd_field' (length=22)
+        //     1 => string 'test:' (length=5)
+        //     2 => string 'test' (length=4)
+        //     3 => string 'input' (length=5)
+        //     4 => string 'ab6bd_field' (length=11)
+        if (preg_match('/^(([a-z]+)\|)?([\w-]+|\*)?\.([\w-]+)$/i', trim($source), $matches)) {
+            return array(
+                new SelectorNode(new ClassNode(new ElementNode($matches[2] ?: null, $matches[3] ?: null), $matches[4]))
+            );
+        }
+
+        return array();
+    }
+}

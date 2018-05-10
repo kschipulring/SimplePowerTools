@@ -67,7 +67,7 @@
 
 namespace SimplePowerTools;
 
-use \Symfony\Component\CssSelector\CssSelector as CssSelector;
+use \SPTsymfony\Component\CssSelector\CssSelector as CssSelector;
 
 class DOM_Document extends \DOMDocument {
 
