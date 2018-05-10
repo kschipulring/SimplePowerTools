@@ -22,7 +22,7 @@
     "target-dir": "SimplePowerTools",
     "autoload": {
         "psr-0": {
-            "SimplePowerTools\\": "src/SimplePowerTools/"
+            "SimplePowerTools\\": "src/SimplePowerTools/",
             "SPTsymfony\\": "src/SPTsymfony/"
         }
     }
