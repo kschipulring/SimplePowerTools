@@ -91,7 +91,15 @@ class DOM_Query {
                 $this->isHtml = false;
             }
         } else {
-            $this->DOM = $source;
+
+            if( get_class($source) == "SimplePowerTools\DOM_HTML" ){
+                $this->DOM = $source;
+            }else if( get_class($source) == "SimplePowerTools\DOM_Query" ){
+                $this->DOM = $source->DOM;
+            }
+
+
+            //$this->DOM = $source;
             if (isset($source->doctype->name) && $source->doctype->name == 'html') {
                 if ($source->doctype->name == 'html') {
                     $this->isHtml = true;
@@ -138,7 +146,13 @@ class DOM_Query {
     }
 
     protected function _select($v, $key, $value) {
-        $selected = $this->DOM->querySelectorAll($key, $v);
+    		if( get_class($this->DOM) == "SimplePowerTools\DOM_HTML" ){
+    			$selected = $this->DOM->querySelectorAll($key, $v);
+    		}else if( get_class($this->DOM) == "SimplePowerTools\DOM_Query" ){
+    			$selected = $this->DOM->DOM->querySelectorAll($key, $v);
+    		}
+
+        
         foreach ($selected as $v) {
             if ($v !== NULL && !DOM_Helper::containsElement($value->nodes, $v)) {
                 array_push($value->nodes, $v);
