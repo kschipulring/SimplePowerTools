@@ -39,8 +39,8 @@
  *    define("LIBRARY_PATH", BASE_PATH . DIRECTORY_SEPARATOR . 'vendor');
  *    define("USER_PATH", BASE_PATH . DIRECTORY_SEPARATOR . 'user123');
  * 
- *    require LIBRARY_PATH . DIRECTORY_SEPARATOR . 'Loader.php';
- *    Loader::init(array(LIBRARY_PATH, USER_PATH));
+ *    require LIBRARY_PATH . DIRECTORY_SEPARATOR . 'SPT_Loader.php';
+ *    SPT_Loader::init(array(LIBRARY_PATH, USER_PATH));
  *
  * ?>
  * </code>
@@ -92,11 +92,21 @@
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  */
 
-class Loader {
+class SPT_Loader {
 
     protected static $_static_data = array();
 
     public static function init($prependPaths = array()) {
+
+        if( count($prependPaths) < 1 ){
+            $base_path = dirname(__FILE__);
+
+            $library_path = $base_path . DIRECTORY_SEPARATOR . 'SimplePowerTools';
+            $spt_symfony_path = $base_path . DIRECTORY_SEPARATOR . 'SPTsymfony';
+
+            $prependPaths = array($library_path, $spt_symfony_path);
+        }
+    	
         static::setErrorReporting(!PRODUCTION);
         static::_synchPaths(true);
         static::appendLoader(get_called_class(), 'load');
